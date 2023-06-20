@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APi Productos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+
+
+    <nav class="navbar bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+        <img src="https://www.svgrepo.com/show/354380/spring-icon.svg" alt="Bootstrap" width="60" height="45">
+        </a>
+    </div>
+    </nav>
+    <div class="container m-3">
+        <div class="row mt-3">
+            <div class="col-md-2">
+                <input type="text" class="form-control border-dark" placeholder="Referencia" id="ref">
+            </div>
+            <div class="col-md-10 btn-group" role="group">
+                <button type="button" class="btn btn-warning" id="listar">Listar</button>
+                <button type="button" class="btn btn-info" id="buscar">Buscar</button>
+                <button type="button" class="btn btn-danger" id="eliminar">Eliminar</button>
+                <button type="button" class="btn btn-secondary" id="cargar">Cargar Info</button>
+            </div>
+        </div>
+     </div>
+
+
+    <div class="container">
+        <table class="table table-bordered border-dark  mt-2" id="tabla"></table> 
+    </div>
+    
+
+    <div class="containert m-4">
+        <form class="row g-3" id="form">
+            <div class="col-md-2">
+              <label class="form-label">Referencia:<span class="required"> *</span></label>
+              <input type="text" class="form-control border-dark" id="referencia" name="referencia" required>
+            </div>
+            <div class="col-md-10">
+              <label class="form-label">Nombre:<span class="required"> *</span></label>
+              <input type="text" class="form-control border-dark" id="nombre" name="nombre" required>
+            </div>
+            <div class="col-md-8">
+              <label class="form-label">Categoria:<span class="required"> *</span></label>
+              <input type="text" class="form-control border-dark" id="categoria" name="categoria" required>
+            </div>
+            <div class="col-md-2">
+              <label class="form-label">Precio Unitario:<span class="required"> *</span></label>
+              <input type="number" class="form-control border-dark" id="precioUnitario" name="precioUnitario" required>
+            </div>
+            <div class="col-md-2">
+              <label class="form-label">Cantidad<span class="required"> *</span></label>
+              <input type="number" class="form-control border-dark" id="cantidad" name="cantidad" required>
+            </div>
+          </form>
+    </div>
+
+        <div class="col-12 text-center mt-2" >
+            <button type="button " class="btn btn-primary" id="agregar">Agregar</button>
+            <button type="button" class="btn btn-success" id="actualizar">Actualizar</button>
+        </div>
+
+        <div class="containert m-4">
+            <form class="row g-3" id="form">
+                <div class="col-md-9">
+                  <label class="form-label">Categoria:<span class="required"> *</span></label>
+                  <input type="text" class="form-control border-dark" id="porCategoria" name="categoria" required>
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label">Cantidad<span class="required"> *</span></label>
+                  <input type="number" class="form-control border-dark" id="porCantidad" name="cantidad" required>
+                </div>
+              </form>
+        </div>
+        <div class="col-12 text-center mt-2" >
+            <button type="button " class="btn btn-primary" id="actualizarCantidad">Actualizar Cantidad</button>
+        </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
